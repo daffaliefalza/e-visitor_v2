@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Color.fromARGB(255, 75, 209, 142),
       body: InkWell(
         child: Stack(
           fit: StackFit.expand,
@@ -48,12 +48,12 @@ class _SplashScreenState extends State<SplashScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/biu.png',
+                        'assets/images/pulchra.png',
                         height: 150,
                         width: 150,
                       ),
                       Text(
-                        "BIU - Human Resource",
+                        "Pulchra Clinic",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -87,7 +87,7 @@ class _SplashScreenState extends State<SplashScreen> {
                               flex: 4,
                             ),
                             Text(
-                              'Bina Insani University',
+                              'Pulchra Clinic',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
