@@ -223,7 +223,7 @@ class _PageLoginState extends State<PageLogin> {
                 child: Container(
                   margin: const EdgeInsets.all(0),
                   width: double.infinity,
-                  height: 180,
+                  height: 280,
                   decoration: const BoxDecoration(
                     color: Colors.white24,
                     image: DecorationImage(
@@ -246,7 +246,7 @@ class _PageLoginState extends State<PageLogin> {
               ),
               Container(
                   padding:
-                      const EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
+                      const EdgeInsets.only(top: 45.0, left: 20.0, right: 20.0),
                   child: Column(
                     children: <Widget>[
                       inputUsername(),
