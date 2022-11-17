@@ -145,12 +145,12 @@ class _AddState extends State<Add> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF229BD8),
         elevation: 0,
 //leading: Icon(Icons.menu),
-        title: Text("BIU"),
+        title: Text("Pilih Jadwal Vaksin"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.logout),
@@ -171,28 +171,40 @@ class _AddState extends State<Add> {
               TextFormField(
                 controller: _dateC,
                 decoration: const InputDecoration(
-                  labelText: 'Schedule Date',
+                  labelText: 'Pilih Tanggal',
                   border: OutlineInputBorder(),
 // fillColor: Colors.white,
 // filled: true
                 ),
               ),
               ElevatedButton(
-                  onPressed: () => displayDatePicker(context),
-                  child: const Text("Pick Date")),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll<Color>(
+                    Color(0xFF229BD8),
+                  ),
+                ),
+                onPressed: () => displayDatePicker(context),
+                child: Icon(Icons.calendar_month_outlined),
+              ),
               const SizedBox(height: 10),
               TextFormField(
                 controller: _timeC,
                 decoration: const InputDecoration(
-                  labelText: 'Time',
+                  labelText: 'Waktu',
                   border: OutlineInputBorder(),
 // fillColor: Colors.white,
 // filled: true
                 ),
               ),
               ElevatedButton(
-                  onPressed: () => displayTimePicker(context),
-                  child: const Text("Pick Time")),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll<Color>(
+                    Color(0xFF229BD8),
+                  ),
+                ),
+                onPressed: () => displayTimePicker(context),
+                child: Icon(Icons.access_alarm),
+              ),
               SizedBox(height: 10),
               TextFormField(
                 controller: desc,

@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Colors.grey[100],
       body: InkWell(
         child: Stack(
           fit: StackFit.expand,
@@ -48,16 +48,9 @@ class _SplashScreenState extends State<SplashScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/biu.png',
+                        'assets/images/pll.png',
                         height: 150,
                         width: 150,
-                      ),
-                      Text(
-                        "BIU",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 10.0),
@@ -76,22 +69,8 @@ class _SplashScreenState extends State<SplashScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: <Widget>[
                             Spacer(),
-                            Text(
-                              _versionName,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold),
-                            ),
                             Spacer(
                               flex: 4,
-                            ),
-                            Text(
-                              'Pulchra Clinic',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold),
                             ),
                             Spacer(),
                           ])

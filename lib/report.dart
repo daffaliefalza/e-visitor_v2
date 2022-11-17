@@ -134,7 +134,7 @@ class _ReportState extends State<Report> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: Icon(Icons.menu),
-        title: Text("BIU"),
+        title: Text(""),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.logout),

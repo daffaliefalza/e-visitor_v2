@@ -107,7 +107,7 @@ class _ViewState extends State<View> {
         elevation: 0,
 //leading: Icon(Icons.menu),
 
-        title: Text("BIU"),
+        title: Text("Share"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.logout),

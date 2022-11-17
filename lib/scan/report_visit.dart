@@ -110,12 +110,12 @@ class ReportVisitState extends State<ReportVisit> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF229BD8),
         elevation: 0,
 //leading: Icon(Icons.menu),
-        title: Text("BIU"),
+        title: Text("List Pendaftar Vaksin"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.logout),

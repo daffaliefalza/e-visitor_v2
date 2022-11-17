@@ -161,14 +161,20 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Color(0xFFEAF5FA),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF229BD8),
         elevation: 0,
-        leading: Icon(Icons.menu),
-        title: Text("BIU"),
+        leading: Icon(Icons.menu, color: Color.fromARGB(255, 255, 255, 255)),
+        title: Text(
+          'Home Page',
+          style: TextStyle(
+            color: Color.fromARGB(255, 255, 255, 255),
+          ),
+        ),
         actions: <Widget>[
           IconButton(
+            color: Color.fromARGB(255, 255, 255, 255),
             icon: Icon(Icons.logout),
             onPressed: () {
               logOut();
@@ -178,6 +184,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         child: Container(
+          margin: EdgeInsets.only(top: 20, bottom: 0),
           padding: EdgeInsets.all(20.0),
           child: Column(
             children: <Widget>[
@@ -187,7 +194,7 @@ class _HomePageState extends State<HomePage> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
-                        image: AssetImage('assets/images/background1.jpg'),
+                        image: AssetImage('assets/images/background_home.png'),
                         fit: BoxFit.cover)),
                 child: Container(
                   decoration: BoxDecoration(
@@ -204,12 +211,17 @@ class _HomePageState extends State<HomePage> {
                         "Hi, ${firstName} ${lastName}",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 18,
+                            fontSize: 22,
                             fontWeight: FontWeight.bold),
                       ),
-                      Text(
-                        "Welcome to N-HR Mobile",
-                        style: TextStyle(color: Colors.white, fontSize: 14),
+                      Center(
+                        child: Text(
+                          "CEK LOKASI VAKSIN TERDEKAT",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 19,
+                          ),
+                        ),
                       ),
                       SizedBox(
                         height: 10,
@@ -220,7 +232,7 @@ class _HomePageState extends State<HomePage> {
                         child: Center(
                           child: ElevatedButton.icon(
                               style: ElevatedButton.styleFrom(
-                                  primary: Colors.amber,
+                                  primary: Color.fromARGB(255, 43, 150, 196),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20.0),
                                     side: const BorderSide(color: Colors.white),
@@ -236,7 +248,7 @@ class _HomePageState extends State<HomePage> {
                               },
                               icon: const Icon(Icons.arrow_right_alt),
                               label: const Text(
-                                "Clocking",
+                                "CEK LOKASI",
                                 style: TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.bold),
                               )),
@@ -262,7 +274,7 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white))
+                              color: Color(0xFF229BD8)))
                     ],
                   ),
                 ),
@@ -285,22 +297,26 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.grey,
+                            color: Color.fromARGB(255, 59, 158, 234),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
                                 Icons.insert_invitation,
-                                size: 50,
-                                color: Colors.amber,
+                                size: 40,
+                                color: Color.fromARGB(255, 255, 255, 255),
                               ),
                               SizedBox(
                                 height: 3,
                               ),
                               Text(
-                                "Invitation",
-                                style: TextStyle(fontSize: 12),
+                                "Pilih Jadwal Vaksin",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                    letterSpacing: 1.0),
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
@@ -317,22 +333,25 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.grey,
+                            color: Color.fromARGB(255, 59, 158, 234),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
                                 Icons.qr_code_scanner,
-                                size: 50,
-                                color: Colors.amber,
+                                size: 40,
+                                color: Color.fromARGB(255, 255, 255, 255),
                               ),
                               SizedBox(
                                 height: 3,
                               ),
                               Text(
                                 "Scanner",
-                                style: TextStyle(fontSize: 12),
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                    letterSpacing: 1.0),
                               ),
                             ],
                           ),
@@ -347,22 +366,28 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.grey,
+                            color: Color.fromARGB(255, 59, 158, 234),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
                                 Icons.file_copy_outlined,
-                                size: 50,
-                                color: Colors.amber,
+                                size: 40,
+                                color: Color.fromARGB(255, 255, 255, 255),
                               ),
                               SizedBox(
                                 height: 3,
                               ),
-                              Text(
-                                "Data Visit",
-                                style: TextStyle(fontSize: 12),
+                              Center(
+                                child: Text(
+                                  "Pendaftar Vaksin",
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                      letterSpacing: 1.0),
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
                             ],
                           ),
@@ -377,22 +402,61 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.grey,
+                            color: Color.fromARGB(255, 59, 158, 234),
                           ),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(
-                                Icons.manage_history,
-                                size: 50,
-                                color: Colors.amber,
+                                Icons.account_balance_wallet_outlined,
+                                size: 40,
+                                color: Color.fromARGB(255, 255, 255, 255),
                               ),
                               SizedBox(
                                 height: 3,
                               ),
                               Text(
-                                "Attendance",
-                                style: TextStyle(fontSize: 12),
+                                " Sertifikasi",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                    letterSpacing: 1.0),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () async {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (_) => Report()));
+                          setState(() {});
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color.fromARGB(255, 59, 158, 234),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.add_task,
+                                size: 40,
+                                color: Color.fromARGB(255, 255, 255, 255),
+                              ),
+                              SizedBox(
+                                height: 3,
+                              ),
+                              Center(
+                                child: Text(
+                                  "Status Vaksin",
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                      letterSpacing: 1.0),
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
                             ],
                           ),

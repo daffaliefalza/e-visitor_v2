@@ -174,7 +174,7 @@ class _ClockingState extends State<Clocking> {
         backgroundColor: Colors.transparent,
         elevation: 0,
 //leading: Icon(Icons.menu),
-        title: Text("BIU"),
+        title: Text("Daftar Tempat"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.logout),
@@ -326,7 +326,7 @@ class _ClockingState extends State<Clocking> {
                 child: Center(
                   child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.amber,
+                          primary: Color.fromARGB(255, 43, 150, 196),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0),
                             side: const BorderSide(color: Colors.white),
@@ -346,7 +346,7 @@ class _ClockingState extends State<Clocking> {
                       },
                       icon: const Icon(Icons.arrow_right_alt),
                       label: const Text(
-                        "Clocking",
+                        "GENERATE",
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.bold),
                       )),

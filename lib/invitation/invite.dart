@@ -64,7 +64,7 @@ class MainInviteState extends State<MainInvite> {
 
 //make different color to different card
   final _lightColors = [
-    Colors.amber.shade300,
+    Color.fromARGB(255, 231, 210, 148),
     Colors.lightGreen.shade300,
     Colors.lightBlue.shade300,
     Colors.orange.shade300,
@@ -114,12 +114,12 @@ class MainInviteState extends State<MainInvite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF229BD8),
         elevation: 0,
 //leading: Icon(Icons.menu),
-        title: Text("BIU"),
+        title: Text("Daftar Pasien"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.logout),
@@ -155,7 +155,7 @@ class MainInviteState extends State<MainInvite> {
 //make 2 different height
 // constraints:
 // BoxConstraints(minHeight: (index % 2 + 1) * 85),
-                      padding: EdgeInsets.all(15),
+                      padding: EdgeInsets.all(25),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

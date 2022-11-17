@@ -77,7 +77,7 @@ class _PageLoginState extends State<PageLogin> {
             ),
           ),
         ),
-        style: const TextStyle(fontSize: 16.0, color: Colors.white));
+        style: const TextStyle(fontSize: 18.0, color: Colors.white));
   }
 
   Widget inputPassword() {
@@ -121,7 +121,7 @@ class _PageLoginState extends State<PageLogin> {
           ),
         ),
       ),
-      style: const TextStyle(fontSize: 16.0, color: Colors.white),
+      style: const TextStyle(fontSize: 18.0, color: Colors.white),
     );
   }
 
@@ -212,7 +212,10 @@ class _PageLoginState extends State<PageLogin> {
             gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Colors.grey, Color.fromARGB(255, 5, 6, 6)],
+          colors: [
+            Color.fromARGB(255, 255, 255, 255),
+            Color.fromARGB(253, 71, 158, 202),
+          ],
         )),
         child: Form(
           key: _formKey,
@@ -227,7 +230,7 @@ class _PageLoginState extends State<PageLogin> {
                   decoration: const BoxDecoration(
                     color: Colors.white24,
                     image: DecorationImage(
-                      image: AssetImage('assets/images/biu.png'),
+                      image: AssetImage('assets/images/pll_login.png'),
                     ),
                   ),
                 ),
@@ -237,7 +240,7 @@ class _PageLoginState extends State<PageLogin> {
                 padding: const EdgeInsets.all(8.0),
                 alignment: Alignment.center,
                 child: const Text(
-                  "LOGIN APP BIU-HRIS",
+                  "LOGIN APP PEDULI LINDUNGI",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 22,
@@ -260,7 +263,7 @@ class _PageLoginState extends State<PageLogin> {
                     const EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
                 child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.amber,
+                        primary: Color.fromARGB(255, 43, 150, 196),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                           side: const BorderSide(color: Colors.white),
